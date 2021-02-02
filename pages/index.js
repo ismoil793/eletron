@@ -1,11 +1,4 @@
 import React from 'react';
+import Home from "./home";
 
-const Index = () => {
-   return (
-       <div>
-
-       </div>
-   );
-};
-
-export default Index;
+export default Home;
