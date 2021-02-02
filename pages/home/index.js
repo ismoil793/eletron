@@ -5,6 +5,16 @@ import Slider from "react-slick";
 
 
 const Home = () => {
+
+   const settings = {
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+   };
+
    return (
        <>
           <Head>
@@ -26,7 +36,7 @@ const Home = () => {
              />
           </Head>
           <Layout>
-             asd
+             <Slider {...settings} />
           </Layout>
        </>
    );

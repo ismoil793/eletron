@@ -12,6 +12,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-slick": "^0.28.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "universal-cookie": "^4.0.4"
   }
 }

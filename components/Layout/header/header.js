@@ -1,17 +1,14 @@
 import React from 'react';
+import HeaderContact from "./headerContact";
+import HeaderMain from "./headerMain";
 
 const Header = () => {
+
+
    return (
        <header className="header">
-          <div className="header_top">
-             <div className="container-fluid">
-                <div
-                    className="row d-flex justify-content-center justify-content-sm-between align-items-center"
-                >
-                   <p className="mb-0">Мы в социальных сетях</p>
-                </div>
-             </div>
-          </div>
+          <HeaderContact/>
+          <HeaderMain/>
        </header>
    );
 };
