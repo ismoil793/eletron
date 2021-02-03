@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderContact from "./headerContact";
 import HeaderMain from "./headerMain";
+import Menu from "./menu";
 
 const Header = () => {
 
@@ -9,6 +10,7 @@ const Header = () => {
        <header className="header">
           <HeaderContact/>
           <HeaderMain/>
+          <Menu/>
        </header>
    );
 };
