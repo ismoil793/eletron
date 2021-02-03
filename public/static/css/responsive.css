@@ -26,39 +26,11 @@
 ************/
 
 @media only screen and (max-width: 1687px) {
-    .main_nav_dropdown li:nth-last-child(-n+2) {
-        display: none;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
 
-    .main_nav_dropdown li:nth-last-child(1) {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
 }
 
 @media only screen and (max-width: 1600px) {
-    .main_nav_dropdown li:nth-last-child(-n+2) {
-        display: none;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
 
-    .main_nav_dropdown li:nth-last-child(1) {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
 }
 
 /************
@@ -82,21 +54,6 @@
         animation: fadein 0.5s;
     }
 
-    .main_nav_dropdown li:nth-last-child(-n+2) {
-        display: none;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
-
-    .main_nav_dropdown li:nth-last-child(1) {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
 
 
 }
@@ -106,21 +63,7 @@
 ************/
 
 @media only screen and (max-width: 1380px) {
-    .main_nav_dropdown li:nth-last-child(-n+3) {
-        display: none;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
 
-    .main_nav_dropdown li:nth-last-child(1) {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
 }
 
 /************
@@ -128,21 +71,7 @@
 ************/
 
 @media only screen and (max-width: 1280px) {
-    .main_nav_dropdown li:nth-last-child(-n+4) {
-        display: none;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
 
-    .main_nav_dropdown li:nth-last-child(1) {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
 }
 
 /************
@@ -150,23 +79,6 @@
 ************/
 
 @media only screen and (max-width: 1199px) {
-
-    .main_nav_dropdown li:nth-last-child(-n+5) {
-        display: none;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
-
-
-    .main_nav_dropdown li:nth-last-child(1) {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 400;
-        color: #a19a9a;
-        line-height: 49px;
-    }
 
     .logo a img {
         width: 200px;
@@ -270,7 +182,7 @@
     }
 
     .main_nav_content {
-        background: #3c3c3c;
+        background: #FFD103;
     }
 
     .menu_trigger_container {
