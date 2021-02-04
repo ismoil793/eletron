@@ -95,7 +95,9 @@ a {
   background: #fff;
 }
 
-
+a:hover {
+  color: #000;
+}
 .list .menu_label_opened > .sub_list {
   top: 0;
   visibility: visible;
@@ -381,11 +383,12 @@ a:visited {
   -webkit-font-smoothing: antialiased;
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  transition: all 220ms ease;
 }
 
 p a:active {
   position: relative;
-  color: tomato;
+  color: #000;
 }
 
 p a:hover {
@@ -10474,12 +10477,12 @@ input[type="file"]::-webkit-file-upload-button {
 /* Global scrollbar styles start */
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 12px;
   height: 0;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #f21c22;
+  background-color: #C1C1C1;
 }
 
 ::-webkit-scrollbar-track {
