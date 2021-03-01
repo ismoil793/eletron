@@ -16,7 +16,7 @@ export function notifyError(msg, duration = 2000) {
          }
       ],
       duration,
-      position: { x: 'right', y: window.innerWidth <= 768 ? 'bottom' : 'top' },
+      position: { x: 'right', y: window.innerWidth <= 768 ? 'bottom' : 'bottom' },
       dismissible: true
    });
 
@@ -41,7 +41,7 @@ export function notifySuccess(msg, duration = 2000) {
          }
       ],
       duration,
-      position: { x: 'right', y: window.innerWidth <= 768 ? 'bottom' : 'top' },
+      position: { x: 'right', y: window.innerWidth <= 768 ? 'bottom' : 'bottom' },
       dismissible: true
    });
 
@@ -66,7 +66,7 @@ export function notifyWarn(msg, duration = 2000) {
          }
       ],
       duration,
-      position: { x: 'right', y: window.innerWidth <= 768 ? 'bottom' : 'top' },
+      position: { x: 'right', y: window.innerWidth <= 768 ? 'bottom' : 'bottom' },
       dismissible: true
    });
 

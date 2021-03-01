@@ -7,8 +7,11 @@ import {wrapper} from '../store/store';
 import Router from "next/router";
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
+import "../public/static/css/bootstrap.css"
+import "../public/static/css/globals.css"
+import "../public/static/css/responsive.css"
 
-NProgress.configure({showSpinner: false});
+NProgress.configure({showSpinner: true});
 //Binding events.
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());

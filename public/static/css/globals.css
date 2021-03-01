@@ -297,16 +297,16 @@ a:hover {
   color: rgba(0, 0, 0, 0.3);
 }
 
-@import url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/stylesheet.css);
+/*@import url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/stylesheet.css);*/
 
-@font-face {
-  font-family: Roboto, sans-serif;
-  src: url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot);
-  src: url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot) format("embedded-opentype"),
-  url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff) format("woff"),
-  url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf) format("truetype"),
-  url(webfont.svg#svgFontName) format("svg");
-}
+/*@font-face {*/
+/*  font-family: Roboto, sans-serif;*/
+/*  src: url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot);*/
+/*  src: url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot) format("embedded-opentype"),*/
+/*  url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff) format("woff"),*/
+/*  url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf) format("truetype"),*/
+/*  url(webfont.svg#svgFontName) format("svg");*/
+/*}*/
 
 /* @font-face {
 	font-family: lg;
@@ -1379,6 +1379,7 @@ select option {
   font-weight: bold;
   color: #000;
   line-height: 49px;
+  transition: all 2500ms ease;
 }
 
 .main_nav_dropdown li .special_category {
@@ -4253,14 +4254,14 @@ select option {
   color: #0d82d3;
 }
 
-@font-face {
-  font-family: Helvetica-Neue;
-  src: url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot);
-  src: url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot) format("embedded-opentype"),
-  url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff) format("woff"),
-  url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf) format("truetype"),
-  url(webfont.svg#svgFontName) format("svg");
-}
+/*@font-face {*/
+/*  font-family: Helvetica-Neue;*/
+/*  src: url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot);*/
+/*  src: url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot) format("embedded-opentype"),*/
+/*  url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff) format("woff"),*/
+/*  url(/static/assets/template/avtech/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf) format("truetype"),*/
+/*  url(webfont.svg#svgFontName) format("svg");*/
+/*}*/
 
 .contact_info_image img {
   max-width: 100%;
@@ -10510,29 +10511,29 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 .red{
-  color: #f21c22 !important
+  color: #FFD103 !important
 }
 
 .input-range__track--active {
-  background: #f21c22 !important;
+  background: #FFD103 !important;
 }
 
 .input-range__slider {
-  background: #f21c22 !important;
-  border: 1px solid #f21c22 !important;
+  background: #FFD103 !important;
+  border: 1px solid #FFD103 !important;
 }
 
 #nprogress .bar {
-  background: #f22422 !important;
+  background: #FFD103 !important;
 }
 
 #nprogress .peg {
-  box-shadow: 0 0 10px #f22422, 0 0 5px #f22422 !important;
+  box-shadow: 0 0 10px #f22422, 0 0 5px #FFD103 !important;
 }
 
 #nprogress .spinner-icon {
-  border-top-color: #f22422 !important;
-  border-left-color: #f22422 !important;
+  border-top-color: #FFD103 !important;
+  border-left-color: #FFD103 !important;
 }
 
 /*--------------------------ISMOIL's custom styles-------------------------------*/
