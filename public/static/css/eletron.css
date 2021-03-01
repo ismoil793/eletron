@@ -1,0 +1,152 @@
+/*----------------------------------------------------------ISMOIL's custom styles-------------------------------------------*/
+
+/*---------------------Layout----------------------*/
+
+body {
+    --eletron: #FED000;
+    --eletron-dark: #D7B100;
+}
+
+
+.layout-children {
+    min-height: 85vh;
+}
+
+
+/*---------------------Banner home----------------------*/
+
+.banner-home-wrap .slick-list {
+    border-radius: 15px;
+}
+
+.banner-home-wrap {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.home-banner-figure {
+    position: relative;
+    border-radius: 15px;
+    margin-bottom: 0;
+
+}
+
+.home-banner-figure img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.home-banner-figure figcaption{
+    position: absolute;
+    top: 35%;
+    color: #fff;
+    z-index: 2;
+    left: 10%;
+}
+
+.home-banner-figure figcaption h5{
+    font-size: 1.5rem;
+}
+
+.home-banner-figure .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.banner-home-wrap .slick-prev, .banner-home-wrap .slick-next {
+    width: 35px;
+    height: 35px;
+}
+
+
+.banner-home-wrap .slick-prev {
+    width: 35px;
+    height: 35px;
+    z-index: 2;
+}
+
+.banner-home-wrap .slick-next {
+    right: 15px;
+}
+
+.banner-home-wrap .slick-prev {
+    left: 15px;
+}
+
+
+
+/*---------------------Registration----------------------*/
+
+.reg-entity-wrap {
+    padding: 50px 10px 50px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reg-entity-type {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 200ms ease;
+    font-size: 17px;
+}
+
+.reg-entity-type:hover {
+    border-color: #7E7E7E;
+}
+
+
+.reg-entity-type i {
+    color: #7E7E7E;
+}
+
+.reg-entity-type p {
+    margin: 0;
+    font-size: 17px;
+}
+
+/*---------------------Project constants----------------------*/
+
+.main-btn-eletron {
+    border-radius: 15px;
+    background-color: var(--eletron);
+    padding: 18px 30px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: all 250ms ease;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.main-btn-eletron:hover{
+    outline: none;
+    background-color: var(--eletron-dark);
+    cursor: pointer;
+}
+
+.main-btn-eletron:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+

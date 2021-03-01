@@ -9,6 +9,7 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import "../public/static/css/bootstrap.css"
 import "../public/static/css/globals.css"
+import "../public/static/css/eletron.css"
 import "../public/static/css/responsive.css"
 
 NProgress.configure({showSpinner: true});
