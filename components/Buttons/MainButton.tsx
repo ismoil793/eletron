@@ -6,7 +6,7 @@ interface MainBtnProps {
 
 const MainBtn: React.FC<MainBtnProps> = ({txt}) => {
     return (
-        <button className="main-btn-eletron">
+        <button className="btn-eletron main">
             {txt}
         </button>
     );

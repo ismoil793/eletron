@@ -39,7 +39,7 @@ body {
     object-fit: cover;
 }
 
-.home-banner-figure figcaption{
+.home-banner-figure figcaption {
     position: absolute;
     top: 35%;
     color: #fff;
@@ -47,7 +47,7 @@ body {
     left: 10%;
 }
 
-.home-banner-figure figcaption h5{
+.home-banner-figure figcaption h5 {
     font-size: 1.5rem;
 }
 
@@ -80,7 +80,6 @@ body {
 .banner-home-wrap .slick-prev {
     left: 15px;
 }
-
 
 
 /*---------------------Registration----------------------*/
@@ -116,27 +115,65 @@ body {
     font-size: 17px;
 }
 
+/*---------------------Product Card----------------------*/
+.product-card {
+    border: 1px solid black;
+}
+
+.product-card figure {
+    margin-bottom: 0.5rem;
+}
+
+.product-card img {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+}
+
+.product-card h4 {
+    font-weight: bold;
+}
+
+.product-card .card-price {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-card .add-to-cart {
+    position: relative;
+    z-index: 2;
+}
+
+
 /*---------------------Project constants----------------------*/
 
-.main-btn-eletron {
-    border-radius: 15px;
+.btn-eletron {
+    border-radius: 10px;
     background-color: var(--eletron);
-    padding: 18px 30px;
+    padding: 15px 30px;
     font-weight: bold;
     border: none;
     outline: none;
     transition: all 250ms ease;
     font-size: 1rem;
     letter-spacing: 0.5px;
+    display: inline-block;
 }
 
-.main-btn-eletron:hover{
+.main.btn-eletron {
+    background-color: var(--eletron);
+}
+
+.main.btn-eletron:hover {
     outline: none;
     background-color: var(--eletron-dark);
     cursor: pointer;
 }
 
-.main-btn-eletron:focus {
+.main.btn-eletron:focus {
     outline: none;
 }
 
