@@ -115,9 +115,44 @@ body {
     font-size: 17px;
 }
 
+/*---------------------Footer----------------------*/
+footer.footer {
+    padding-top: 10%;
+}
+
+/*---------------------Popular Products----------------------*/
+
+.products-small-banner {
+    box-sizing: border-box;
+    background: var(--eletron);
+    height: 100%;
+    max-height: 315px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    max-width: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-small-banner h3 {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+
+.products-small-banner img {
+    display: block;
+    width: 32px;
+    height: 50px;
+}
+
 /*---------------------Product Card----------------------*/
 .product-card {
-    border: 1px solid black;
+    max-width: 245px;
+    margin-bottom: 50px;
 }
 
 .product-card figure {
@@ -142,11 +177,36 @@ body {
     font-weight: 500;
 }
 
-.product-card .add-to-cart {
-    position: relative;
-    z-index: 2;
+.product-card .functional-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.product-card .functional-btns button {
+    width: 65%;
+}
+
+.product-card .functional-btns .compare-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.product-card .functional-btns .compare-btn:hover svg {
+    color: var(--eletron);
+    fill: var(--eletron);
+}
+
+.product-card .functional-btns .compare-btn svg {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    transition: all 250ms ease;
+}
 
 /*---------------------Project constants----------------------*/
 
@@ -177,7 +237,10 @@ body {
     outline: none;
 }
 
-
+.col-lg-2-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
 
 
 

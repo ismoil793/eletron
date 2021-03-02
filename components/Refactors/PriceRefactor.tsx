@@ -1,6 +1,10 @@
 import React from 'react';
 
-const PriceRefactor = ({price}) => {
+interface PriceRefactorProps {
+   price: number
+}
+
+const PriceRefactor:React.FC<PriceRefactorProps> = ({price}) => {
 
    const formatPrice = priceF => {
       priceF = priceF.toString();

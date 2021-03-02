@@ -7,6 +7,8 @@ import ProductCard from "../../components/Product/Card";
 
 const Home = () => {
 
+   const products = [0,1,2,3,4,5,6,7,8,9]
+
    return (
        <Layout>
 
@@ -20,9 +22,21 @@ const Home = () => {
                    </div>
 
                    <div className="row">
-                      <div className="col-lg-2">
-                         <ProductCard/>
+                      <div className="col-lg-2 col-lg-2-5">
+                         <div className="products-small-banner">
+                            <img src="/static/img/brand/eletron-lamp-black.png" alt="Eletron"/>
+                            <h3>
+                               Популярные <br/> товары
+                            </h3>
+                         </div>
                       </div>
+                      {
+                         products.map((item,i) => (
+                             <div key={i} className="col-lg-2 col-lg-2-5">
+                                <ProductCard txt="Dynalite User Interface PDTS фывфы фыв фыв ыв ыв вфыв" />
+                             </div>
+                         ))
+                      }
                    </div>
 
                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi consequatur eaque eius eos
