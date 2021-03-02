@@ -42,7 +42,7 @@ const HomeBanner = () => {
       autoplay: true,
       infinite: true,
       accessibility: true,
-      autoplaySpeed: 50000,
+      autoplaySpeed: 5000,
       speed: 450,
       slidesToShow: 1,
       slidesToScroll: 1,

@@ -51,13 +51,17 @@ body {
     font-size: 1.5rem;
 }
 
-.home-banner-figure .overlay {
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.2);
+}
+
+
+.banner-home-wrap .overlay {
     border-radius: 15px;
 }
 
@@ -117,7 +121,112 @@ body {
 
 /*---------------------Footer----------------------*/
 footer.footer {
-    padding-top: 10%;
+    background-image: url("/static/img/banner/footer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 5%;
+    position: relative;
+}
+
+footer .overlay {
+    background-color: rgba(21,20,18, 0.6);
+}
+
+.footer-nav-list-wrap h5 {
+    font-weight: bold;
+    color: var(--eletron);
+    font-size: 16px;
+}
+
+.footer-nav-link {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.footer-nav-link a {
+    color: inherit;
+}
+
+.footer-nav-link a:hover {
+    text-decoration: underline;
+}
+
+.border-line {
+    background: #fff;
+    height: 1px;
+    margin-top: 65px;
+}
+
+.copyright {
+    text-align: center;
+    background: transparent;
+    padding: 25px 0;
+    color: #fff;
+    font-weight: 500;
+}
+
+.copyright span {
+    color: var(--eletron);
+}
+
+.right-side-list {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.right-side-list .phone,
+.right-side-list .email{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.right-side-list .email {
+    margin-bottom: 50px;
+}
+
+.right-side-list .phone span,
+.right-side-list .email span {
+    color: var(--eletron);
+    font-size: 20px;
+}
+
+.right-side-list .eletron-social {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.right-side-list .social-icons {
+
+}
+
+.right-side-list img {
+    display: block;
+    width: 100%;
+    max-width: 160px;
+    margin-bottom: 40px;
+}
+
+.right-side-list .social-icons {
+    display: flex;
+}
+
+.right-side-list .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--eletron);
+    font-size: 22px;
+    margin-left: 10px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    height: 100%;
+    max-height: 30px;
 }
 
 /*---------------------Popular Products----------------------*/
