@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "framer-motion": "^3.9.1",
     "next": "10.0.6",
     "next-redux-wrapper": "^6.0.2",
     "notyf": "^3.9.0",

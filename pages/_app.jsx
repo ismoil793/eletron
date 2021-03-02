@@ -6,11 +6,13 @@ import "slick-carousel/slick/slick-theme.css";
 import {wrapper} from '../store/store';
 import Router from "next/router";
 import NProgress from 'nprogress';
+import {motion, AnimatePresence} from "framer-motion";
 import 'nprogress/nprogress.css';
 import "../public/static/css/bootstrap.css"
 import "../public/static/css/globals.css"
 import "../public/static/css/eletron.css"
 import "../public/static/css/responsive.css"
+
 
 NProgress.configure({showSpinner: true});
 //Binding events.
@@ -26,11 +28,31 @@ class MyApp extends App {
       return {pageProps: pageProps};
    }
 
+
    render() {
-      const {Component, pageProps} = this.props;
+      const {Component, pageProps, router} = this.props;
+      const spring = {
+         type: "spring",
+         damping: 20,
+         stiffness: 100,
+         when: "afterChildren"
+      };
 
       return (
-             <Component {...pageProps}/>
+          <AnimatePresence>
+             <div className="page-transition-wrapper">
+                <motion.div
+                    transition={spring}
+                    key={router.pathname}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{opacity: 0}}
+                    id="page-transition-container"
+                >
+                   <Component {...pageProps}/>
+                </motion.div>
+             </div>
+          </AnimatePresence>
       )
 
    }

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {FC} from 'react';
 import Link from 'next/link'
 import FooterNavProps from "../footerNavProps"
 
 
-const FooterNavItem: React.FC<FooterNavProps> = ({link, text, className}) => {
+const FooterNavItem: FC<FooterNavProps> = ({link, text, className}) => {
     return (
         <li className={className}>
             {/* scroll is true by default */}

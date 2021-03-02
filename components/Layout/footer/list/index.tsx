@@ -5,19 +5,18 @@ import FooterNavItem from "./item";
 
 interface NavListProps {
     links: FooterNavProps[] | undefined,
-    key: number,
     title: string
 }
 
-const FooterList = ({links, title, key}: NavListProps) => {
+const FooterList = ({links, title}: NavListProps) => {
 
     return (
-        <div className="footer-nav-list-wrap" key={key}>
+        <div className="footer-nav-list-wrap">
             <h5>{title}</h5>
             <ul>
                 {
-                    links.map((item,i) => (
-                        <FooterNavItem link={item.link} className={item.className} text={item.text} />
+                    links?.map((item,i) => (
+                        <FooterNavItem key={i} link={item.link} className={item.className} text={item.text} />
                     ))
                 }
             </ul>
