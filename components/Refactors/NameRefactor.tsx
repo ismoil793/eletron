@@ -15,11 +15,7 @@ const NameRefactor: FC<NameRefactorProps> = ({txt, length = 32}) => {
 
     const deviceWidth = () => {
         let width = windowWidth;
-        if ((width > 991 && width < 1300)) {
-            return true
-        } else {
-            return false
-        }
+        return (width > 991 && width < 1300);
     }
 
     const formatName = (n: string, l: number) => {
