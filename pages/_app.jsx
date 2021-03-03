@@ -39,7 +39,7 @@ class MyApp extends App {
       };
 
       return (
-          <AnimatePresence>
+          <AnimatePresence> {/*  */}
              <div className="page-transition-wrapper">
                 <motion.div
                     transition={spring}

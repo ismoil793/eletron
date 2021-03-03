@@ -4,26 +4,31 @@ import Footer from "./footer/footer";
 import Head from "next/head";
 
 interface LayoutProps {
-    title: string,
-    description: string,
-    keywords: string
+    title?: string,
+    description?: string,
+    keywords?: string
 }
 
-const Layout: React.FC<LayoutProps> = ({title, description, keywords, children}) => {
+const Layout: React.FC<LayoutProps> = (
+    {
+        title = 'Интернет-магазин техники в Ташкенте | eletron.uz',
+        description = 'Купить в Ташкенте по доступной цене и бесплатной доставкой? Легко на eletron.uz!',
+        keywords = "Онлайн-магазин, Техника, Ташкент",
+        children
+    }) => {
     return (
         <>
             <Head>
                 <title>
-                    {title ? title : 'Интернет-магазин техники в Ташкенте | eletron.uz'}
+                    {title}
                 </title>
                 <meta
                     name="description"
-                    content={description ? description
-                        : 'Купить в Ташкенте по доступной цене и бесплатной доставкой? Легко на eletron.uz!'}
+                    content={description}
                 />
                 <meta
                     name="keywords"
-                    content={keywords ? keywords : "Онлайн-магазин, Техника, Ташкент"}
+                    content={keywords}
                 />
                 <meta name="author" content="Eletron"/>
                 <meta
