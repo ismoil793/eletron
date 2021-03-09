@@ -6,9 +6,10 @@ import NameRefactor from "../Refactors/NameRefactor";
 
 interface CardProps {
     txt: string
+    isNew: boolean | false
 }
 
-function SvgComponent(props) {
+function SvgComponent(props:any) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" {...props}>
             <path
@@ -17,13 +18,16 @@ function SvgComponent(props) {
     )
 }
 
-const Card: React.FC<CardProps> = ({txt}) => {
+const Card: React.FC<CardProps> = ({txt,isNew = false}) => {
     return (
         <div className="product-card">
             <figure>
                 <Link href={"/"}>
-                    <a className="">
-                        <img src="/static/img/product/example.jpg" alt="Example product"/>
+                    <a className={isNew ? 'prod-new' : ''}>
+                        <img
+                            src="/static/img/product/example.jpg"
+                            alt="Example product"
+                        />
                         <figcaption>
                             <h4><NameRefactor txt={txt} length={45}/></h4>
                             <div className="card-price">

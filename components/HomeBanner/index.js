@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { GrNext, GrPrevious } from "react-icons/gr";
-import MainBtn from "../Buttons/MainButton";
 import Link from 'next/link'
 
 const HomeBanner = () => {
@@ -17,7 +16,7 @@ const HomeBanner = () => {
               (currentSlide === 0 ? " slick-disabled" : "")
            }
            aria-hidden="true"
-           aria-disabled={currentSlide === 0 ? true : false}
+           aria-disabled={currentSlide === 0}
            type="button"
        >
        </GrPrevious>
@@ -31,7 +30,7 @@ const HomeBanner = () => {
               (currentSlide === slideCount - 1 ? " slick-disabled" : "")
            }
            aria-hidden="true"
-           aria-disabled={currentSlide === slideCount - 1 ? true : false}
+           aria-disabled={currentSlide === slideCount - 1}
            type="button"
        >
        </GrNext>
@@ -69,7 +68,6 @@ const HomeBanner = () => {
                    </a>
                 </Link>
 
-                {/*<MainBtn txt={"Подробнее"} />*/}
              </figcaption>
           </figure>
           <figure className="home-banner-figure">
