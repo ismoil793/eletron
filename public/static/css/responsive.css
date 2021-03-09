@@ -33,4 +33,28 @@
     header.header .main_nav {
         margin-top: 0;
     }
+    .products-small-banner h3 {
+        font-size: 18px;
+    }
+    .product-card h4 {
+        font-size: 16px;
+    }
+    .products-small-banner img {
+        width: 25px;
+        height: 40px;
+    }
+    .product-card, .products-small-banner  {
+        margin-bottom: 25px;
+    }
+    .products-small-banner {
+        max-height: 290px;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .col-lg-2-5 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
 }
