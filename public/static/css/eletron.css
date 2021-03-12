@@ -146,6 +146,12 @@ footer .overlay {
     text-decoration: underline;
 }
 
+footer.footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .border-line {
     background: #fff;
     height: 1px;

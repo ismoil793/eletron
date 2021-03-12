@@ -29,6 +29,26 @@ a, a:active, a:hover, a:link, a:visited {
   display: table;
 }
 
+
+/*-----------------------Progress bar on top---------------------------*/
+
+/*Progress bar*/
+
+body #nprogress .bar {
+  background: #fac612 !important;
+  height: 2px;
+}
+
+body #nprogress .peg {
+  box-shadow: 0 0 10px #fac612, 0 0 5px #fac612;
+}
+
+body #nprogress .spinner-icon {
+  border-top-color: #fac612;
+  border-left-color: #fac612;
+}
+
+
 /*---------------------Layout----------------------*/
 
 body {

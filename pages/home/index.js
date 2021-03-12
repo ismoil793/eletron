@@ -15,6 +15,14 @@ const Home = () => {
 
    const responsiveClass = "col-lg-2-5 col-lg-3 col-md-4 col-sm-6";
 
+   const renderProductCard = () => (
+       products.map((item, i) => (
+           <div key={i} className={responsiveClass}>
+              <ProductCard isNew={true} txt="Dynalite User Interface PDTS"/>
+           </div>
+       ))
+   )
+
    return (
        <Layout>
 
@@ -36,13 +44,9 @@ const Home = () => {
                             </h3>
                          </div>
                       </div>
-                      {
-                         products.map((item, i) => (
-                             <div key={i} className={responsiveClass}>
-                                <ProductCard txt="Dynalite User Interface PDTS фывфы фыв фыв ыв ыв вфыв"/>
-                             </div>
-                         ))
-                      }
+
+                      {renderProductCard()}
+
                    </div>
 
 
@@ -60,13 +64,9 @@ const Home = () => {
                             </h3>
                          </div>
                       </div>
-                      {
-                         products.map((item, i) => (
-                             <div key={i} className={responsiveClass}>
-                                <ProductCard isNew={true} txt="Dynalite User Interface PDTS"/>
-                             </div>
-                         ))
-                      }
+
+                      {renderProductCard()}
+
                    </div>
 
                    <div className="row mb-4">
@@ -87,17 +87,12 @@ const Home = () => {
                             </h3>
                          </div>
                       </div>
-                      {
-                         products2.map((item, i) => (
-                             <div key={i} className={responsiveClass}>
-                                <ProductCard txt="Dynalite User Interface PDTS"/>
-                             </div>
-                         ))
-                      }
+
+                      {renderProductCard()}
+
                    </div>
 
-
-                   <div className="row">
+                   <div className="row mb-5">
                       <div className="col-12 mb-4">
                          <h3>Наши партнёры</h3>
                       </div>

@@ -49,6 +49,22 @@
     .products-small-banner {
         max-height: 290px;
     }
+    .banner-home-wrap .slick-prev,
+    .banner-home-wrap .slick-next {
+        display: none !important;
+    }
+
+    header.header .header_main .logo_container .logo a img {
+        width: 160px;
+    }
+
+    header.header .header_main .wishlist_cart .wishlist {
+        margin-right: 15%;
+    }
+
+    header.header .header_main .wishlist_cart .wishlist img {
+        width: 25px;
+    }
 }
 
 
