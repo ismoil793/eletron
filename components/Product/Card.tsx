@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({txt,isNew = false}) => {
     return (
         <div className="product-card">
             <figure>
-                <Link href={"/"}>
+                <Link href={"/product/eletron"}>
                     <a className={isNew ? 'prod-new' : ''}>
                         <img
                             src="/static/img/product/example.jpg"

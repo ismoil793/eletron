@@ -1,7 +1,5 @@
 import React from "react";
 import App from "next/app";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import {wrapper} from '../store/store';
 import Router from "next/router";
 import NProgress from 'nprogress';

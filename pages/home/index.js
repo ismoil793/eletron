@@ -1,10 +1,9 @@
 import React from 'react';
-import Head from "next/head";
-import HomeBanner from "../../components/HomeBanner";
+import HomeBanner from "../../components/Banners/HomeBanner";
 import Layout from "../../components/Layout";
 import ProductCard from "../../components/Product/Card";
-import BannerHalf from "../../components/BannerHalf";
-import BannerFull from "../../components/BannerFull";
+import BannerHalf from "../../components/Banners/BannerHalf";
+import BannerFull from "../../components/Banners/BannerFull";
 import Brand from "../../components/Brands";
 
 

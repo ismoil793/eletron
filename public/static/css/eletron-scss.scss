@@ -29,6 +29,11 @@ a, a:active, a:hover, a:link, a:visited {
   display: table;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /*-----------------------Progress bar on top---------------------------*/
 
@@ -497,7 +502,94 @@ header.header {
 }
 
 
-/*---------------------Project constants----------------------*/
+/*--------------------- Product Page     /product/slug ----------------------*/
+
+
+.product-section {
+  padding: 4% 0 5% 0;
+
+  .product-photo-gallery {
+    position: relative;
+    max-width: 145px;
+
+    .slick-slide {
+      height: 165px;
+    }
+
+    .slick-prev {
+    }
+
+    .slick-prev, .slick-next {
+
+    }
+
+    .slick-next {
+      background: #F7F7F7;
+      left: 0;
+      top: auto;
+      bottom: -60px;
+      width: 145px;
+      height: 40px;
+      border-radius: 8px;
+
+      &:before {
+        background: none;
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 25px;
+        color: #000000;
+      }
+
+    }
+
+    .gallery-item {
+      height: 550px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #D2D2D2;
+
+      img {
+        width: 95%;
+        height: 95%;
+        margin: auto;
+        object-fit: cover;
+      }
+    }
+
+    .slick-dots {
+      left: 0;
+      top: 0;
+      bottom: auto;
+      width: 150px;
+
+      li {
+        padding: 10px 15px;
+        width: 145px;
+        height: 145px;
+      }
+    }
+
+    .slide-preview {
+      width: 145px;
+      height: 145px;
+      padding: 10px 15px;
+      border: 1px solid #D2D2D2;
+      cursor: pointer;
+
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+
+/*--------------------- Project constants ----------------------*/
 
 .btn-eletron {
   border-radius: 10px;
@@ -525,6 +617,7 @@ header.header {
 .main.btn-eletron:focus {
   outline: none;
 }
+
 /*---------------------Banner home----------------------*/
 
 .banner-home-wrap {
