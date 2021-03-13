@@ -49,7 +49,7 @@ const HeaderContact = () => {
                 <div className="col-auto order-lg-3 pt-2 pt-sm-0 ">
                    <div className="mb-0 d-flex" style={{ fontWeight: "600" }}>
                       <div>
-                         <small><strong>+998</strong></small><span className="red_text"> 71 200 33 66</span>
+                         <small><strong>+998</strong></small><span className="yellow_text"> 71 200 33 66</span>
                       </div>
                       {/* <div className="language-dropdown-wrapper">
                                     <button type="button" className="ml-3" onClick={this.handleClick}>

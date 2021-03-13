@@ -1,19 +1,16 @@
 import React from "react";
 import App from "next/app";
-// import '../styles/globals.css'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import {wrapper} from '../store/store';
 import Router from "next/router";
 import NProgress from 'nprogress';
 import {motion, AnimatePresence} from "framer-motion";
 import 'nprogress/nprogress.css';
 import "../public/static/css/bootstrap.css"
-import "../public/static/css/globals.css"
+import "../public/static/css/eletron-scss.css"
 import "../public/static/css/eletron.css"
 import "../public/static/css/responsive.css"
 
-
+/* progress bar on top */
 NProgress.configure({showSpinner: true});
 //Binding events.
 Router.events.on('routeChangeStart', () => NProgress.start());
@@ -28,7 +25,6 @@ class MyApp extends App {
       return {pageProps: pageProps};
    }
 
-
    render() {
       const {Component, pageProps, router} = this.props;
       const spring = {
@@ -39,7 +35,7 @@ class MyApp extends App {
       };
 
       return (
-          <AnimatePresence>
+          <AnimatePresence> {/* transition on every page load */}
              <div className="page-transition-wrapper">
                 <motion.div
                     transition={spring}
@@ -49,13 +45,13 @@ class MyApp extends App {
                     exit={{opacity: 0}}
                     id="page-transition-container"
                 >
+                   {/* default by next js */}
                    <Component {...pageProps}/>
                 </motion.div>
              </div>
           </AnimatePresence>
       )
-
    }
 }
 
-export default wrapper.withRedux(MyApp)
+export default wrapper.withRedux(MyApp) /* connection of redux */

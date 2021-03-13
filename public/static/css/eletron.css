@@ -1,3 +1,4 @@
+/* autoprefixer grid: autoplace */
 /*----------------------------------------------------------ISMOIL's custom styles-------------------------------------------*/
 
 /*---------------------Layout----------------------*/
@@ -24,11 +25,29 @@ body {
     margin-bottom: 50px;
 }
 
+.banner-home-wrap .overlay {
+    border-radius: 15px;
+}
+
+.banner-home-wrap .slick-prev, .banner-home-wrap .slick-next {
+    width: 35px;
+    height: 35px;
+}
+
+
+.banner-home-wrap .slick-prev {
+    z-index: 2;
+    left: 15px;
+}
+
+.banner-home-wrap .slick-next {
+    right: 15px;
+}
+
 .home-banner-figure {
     position: relative;
     border-radius: 15px;
     margin-bottom: 0;
-
 }
 
 .home-banner-figure img {
@@ -58,31 +77,6 @@ body {
     right: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.2);
-}
-
-
-.banner-home-wrap .overlay {
-    border-radius: 15px;
-}
-
-.banner-home-wrap .slick-prev, .banner-home-wrap .slick-next {
-    width: 35px;
-    height: 35px;
-}
-
-
-.banner-home-wrap .slick-prev {
-    width: 35px;
-    height: 35px;
-    z-index: 2;
-}
-
-.banner-home-wrap .slick-next {
-    right: 15px;
-}
-
-.banner-home-wrap .slick-prev {
-    left: 15px;
 }
 
 
@@ -130,7 +124,7 @@ footer.footer {
 }
 
 footer .overlay {
-    background-color: rgba(21,20,18, 0.6);
+    background-color: rgba(21, 20, 18, 0.6);
 }
 
 .footer-nav-list-wrap h5 {
@@ -150,6 +144,12 @@ footer .overlay {
 
 .footer-nav-link a:hover {
     text-decoration: underline;
+}
+
+footer.footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .border-line {
@@ -179,7 +179,7 @@ footer .overlay {
 
 
 .right-side-list .phone,
-.right-side-list .email{
+.right-side-list .email {
     font-weight: 500;
     font-size: 16px;
 }
@@ -262,6 +262,8 @@ footer .overlay {
 .product-card {
     max-width: 245px;
     margin-bottom: 50px;
+    position: relative;
+    display: block;
 }
 
 .product-card figure {
@@ -272,6 +274,22 @@ footer .overlay {
     display: block;
     max-width: 200px;
     width: 100%;
+}
+
+.product-card .prod-new:after {
+    content: "New!";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    background: #FF0000;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-card h4 {
@@ -317,6 +335,53 @@ footer .overlay {
     transition: all 250ms ease;
 }
 
+/*---------------------Banner half, full----------------------*/
+
+.banner-half-link,
+.banner-full-link {
+    display: block;
+    position: relative;
+    transition: all 250ms ease;
+}
+
+.banner-half-link:hover,
+.banner-full-link:hover {
+    opacity: 0.8;
+}
+
+.banner-half-link img,
+.banner-full-link img {
+    display: block;
+    width: 100%;
+    height: 335px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.banner-full-link .banner-info {
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    z-index: 2;
+    left: 10%;
+}
+
+.banner-full-link .banner-info h5 {
+    font-size: 1.4rem;
+}
+
+/*---------------------Brands----------------------*/
+
+.partner-logo {
+    display: block;
+}
+
+.partner-logo img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+}
+
 /*---------------------Project constants----------------------*/
 
 .btn-eletron {
@@ -344,11 +409,6 @@ footer .overlay {
 
 .main.btn-eletron:focus {
     outline: none;
-}
-
-.col-lg-2-5 {
-    flex: 0 0 20%;
-    max-width: 20%;
 }
 
 

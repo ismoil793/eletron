@@ -242,7 +242,6 @@ a {
 }
 
 a:hover {
-    color: #F21C22;
     text-decoration: underline
 }
 
@@ -750,18 +749,6 @@ pre code {
         margin-left: auto;
     }
 }
-
-
-@media (max-width:1500px) {
-    .container-fluid {
-        width: 100%;
-        padding-right: 5%;
-        padding-left: 5%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
-
 
 .row {
     display: -ms-flexbox;

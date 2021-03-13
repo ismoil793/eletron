@@ -10,6 +10,7 @@ const Menu = () => {
    const [deviceWidth, setDeviceWidth] = useState(0);
 
    useEffect(() => {
+      // component did mount
       setDeviceWidth(window.innerWidth)
    }, []);
 
